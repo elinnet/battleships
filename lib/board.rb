@@ -1,8 +1,11 @@
 
 class Board 
 
-def place_ship
+  def place_ship ship
 
-end
+  end
+
+  def location long,lat
+  end
 
 end
