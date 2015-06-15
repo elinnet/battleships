@@ -16,11 +16,9 @@ class Board
     ship_position_array << ship.position
   end
 
-  def hit?
-    true
-
+  def fired target
+    (ship_position_array.include? target) ? 'hit' : 'miss'
   end
-
 
 
 end

@@ -22,12 +22,9 @@ describe Board do
     expect(subject.ship_position_array.last).to eq 'D3'
   end
 
-  it 'can recieve a hit on ship' do
-    test_ship = double :ship, position: 'D3'
-    subject.place_ship test_ship
-    expect(subject).to be_hit
+  it 'can board be fired upon' do
+    expect(subject).to respond_to(:fired).with(1).argument
   end
 
 
-  
 end
