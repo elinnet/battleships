@@ -10,11 +10,16 @@ describe Board do
       subject.place_ship ship
       expect(subject.grid).to eq [ship]
     end
+    
+    it 'can fire on grid' do
+      expect(subject).to respond_to(:fire)
+    end
+
+
+
   end
 
-  # it 'sepcifies the location' do
-  #   expect(subject).to respond_to(:location).with(2).argument
-  # end
+
 
   it 'has an empty grid when created' do
     expect(subject).to respond_to(:grid)

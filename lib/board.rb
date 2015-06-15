@@ -13,5 +13,16 @@ class Board
    grid << ship
   end
 
+  def fire
+    if grid == []
+      'miss'
+    else
+      'hit'
+    end
+    
+
+  end
+
+
   
 end
