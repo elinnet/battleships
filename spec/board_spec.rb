@@ -15,6 +15,14 @@ describe Board do
       expect(subject).to respond_to(:fire)
     end
 
+    it 'misses if the grid is empty' do 
+      expect(subject.fire).to eq 'Miss'
+    end
+
+    it 'hits if grid is not empty (contains ship)' do
+      subject.place_ship double :ship
+      expect(subject).to be_hit
+    end
 
 
   end

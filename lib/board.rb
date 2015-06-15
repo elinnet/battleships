@@ -14,15 +14,15 @@ class Board
   end
 
   def fire
-    if grid == []
-      'miss'
-    else
-      'hit'
-    end
-    
-
+    hit? ? 'Hit! You have one' : 'Miss'
   end
 
+  def hit?
+    grid != []
+  end
+  def show_grid
+    @grid
+  end
 
   
 end
