@@ -9,8 +9,8 @@ class Board
     @grid = []
   end
 
-  def place_ship ship,target_location 
-
+  def place_ship ship
+   grid << ship
   end
 
   
