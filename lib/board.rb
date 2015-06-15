@@ -1,11 +1,17 @@
+require_relative '../lib/ship.rb'
+
 
 class Board 
 
-  def place_ship ship
+  attr_reader :grid
+
+  def initialize
+    @grid = []
+  end
+
+  def place_ship ship,target_location 
 
   end
 
-  def location long,lat
-  end
-
+  
 end
